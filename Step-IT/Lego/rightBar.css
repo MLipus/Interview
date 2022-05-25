@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+/******Zaměstnanci měsíce******/
+aside p {
+    text-align: center;
+    font-family: Cera Pro, sans-serif;
+    border-bottom: #d01012 solid 2px;
+}
+
+.zamestnanci {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.konkretniZamestnanec1,
+.konkretniZamestnanec2 {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.konkretniZamestnanec1 span {
+    position: absolute;
+    top: 110px;
+    margin-left: 7px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.konkretniZamestnanec2 span {
+    position: absolute;
+    top: 110px;
+    margin-left: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+
+
+.konkretniZamestnanec1:hover span,
+.konkretniZamestnanec2:hover span {
+    visibility: visible;
+    font-style: italic;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 250px;
+    }
+
+    header,
+    .odkazyHlavicka a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .odkazyHlavicka :nth-child(-n+3) {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .konkretniProdukty {
+        text-align: center;
+    }
+
+    aside .zamestnanci {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: justify;
+        align-items: center;
+    }
+}

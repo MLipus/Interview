@@ -1,0 +1,603 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  height: 150px;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+}
+header .first-bar {
+  height: 70%;
+  display: flex;
+}
+header .first-bar .first-bar-first {
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .first-bar .first-bar-first a img {
+  width: 40px;
+  height: 40px;
+}
+header .first-bar .first-bar-second {
+  flex: 60%;
+  display: flex;
+}
+header .first-bar .first-bar-second a {
+  margin: auto;
+}
+header .first-bar .first-bar-second a img {
+  width: 110px;
+  height: 110px;
+}
+header .first-bar .first-bar-third {
+  flex: 20%;
+}
+header .second-bar {
+  height: 30%;
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: space-around;
+}
+header .second-bar a {
+  text-decoration: none;
+  color: rgb(105, 17, 3);
+  display: flex;
+  font-size: 16px;
+  height: 100%;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  transition: 1s ease-in-out;
+}
+header .second-bar a:hover {
+  background-color: rgb(105, 17, 3);
+  color: rgb(246, 246, 246);
+  border-radius: 10px;
+}
+
+main .banner {
+  width: 100%;
+  height: 500px;
+  margin-top: 170px;
+  display: flex;
+  position: relative;
+}
+main .banner img {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+main .banner .description {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  font-size: 50px;
+  color: rgb(105, 17, 3);
+  font-weight: 800;
+}
+main .banner .arrow_down {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  background-color: rgba(105, 17, 3, 0.7);
+  border: solid 2px black;
+}
+main .banner .arrow_down:hover {
+  border: solid 6px white;
+}
+main h1 {
+  margin-top: 30px;
+  color: rgb(105, 17, 3);
+  font-weight: 800;
+}
+main .gallery {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .gallery .ice_cream_gallery {
+  width: 370px;
+  height: 420px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 10px gray;
+  margin-top: 10px;
+}
+main .gallery .ice_cream_gallery .ice_cream img {
+  width: 370px;
+  height: 420px;
+}
+
+@media screen and (max-width: 1050px) {
+  .second-bar a {
+    width: 150px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    margin-bottom: 170px;
+  }
+  header .first-bar {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 45px; */
+  }
+  header .first-bar .first-bar-first {
+    order: 2;
+  }
+  header .first-bar .first-bar-second {
+    order: 1;
+  }
+  header .second-bar {
+    padding: 60px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content !important;
+  }
+
+  main {
+    margin-top: 310px !important;
+  }
+  main .banner {
+    margin-top: 500px;
+  }
+  main .banner img {
+    margin-top: -150px;
+    height: 300px;
+    width: 80%;
+  }
+  main .banner .description {
+    font-size: 32px;
+    top: 10px;
+    left: 50px;
+  }
+  main .banner .arrow_down {
+    top: 50%;
+  }
+
+  h1 {
+    margin-top: -300px !important;
+  }
+
+  .ice_cream_gallery {
+    width: 200px !important;
+    height: 250px !important;
+  }
+  .ice_cream_gallery .ice_cream img {
+    width: 200px !important;
+    height: 250px !important;
+  }
+}
+main .main1 {
+  width: 100%;
+  margin-top: 160px;
+}
+main .main1 .heading1 {
+  height: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+main .main1 .heading1 img {
+  width: 40px;
+  height: 40px;
+}
+main .main1 .heading1 h1 {
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main1 .donuts-products {
+  height: 900px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 370px 370px 370px);
+  justify-content: space-between;
+  align-items: center;
+}
+main .main1 .donuts-products .product .donut {
+  margin: auto;
+  position: relative;
+}
+main .main1 .donuts-products .product .donut .description {
+  position: absolute;
+  bottom: -17px;
+  height: max-content;
+  width: 370px;
+  text-align: center;
+  background-color: rgba(105, 17, 3, 0.7);
+  color: white;
+  font-weight: 800;
+}
+main .main1 .donuts-products .product .donut img {
+  width: 370px;
+  height: 420px;
+}
+main .main2 .heading2 {
+  height: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+main .main2 .heading2 img {
+  width: 40px;
+  height: 40px;
+}
+main .main2 .heading2 h1 {
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main2 .ice-cream-products {
+  height: 900px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 370px 370px 370px);
+  justify-content: space-between;
+  align-items: center;
+}
+main .main2 .ice-cream-products .product .ice-cream {
+  margin: auto;
+  position: relative;
+}
+main .main2 .ice-cream-products .product .ice-cream .description {
+  position: absolute;
+  bottom: -17px;
+  height: max-content;
+  width: 370px;
+  text-align: center;
+  background-color: rgba(105, 17, 3, 0.7);
+  color: white;
+  font-weight: 800;
+}
+main .main2 .ice-cream-products .product .ice-cream img {
+  width: 370px;
+  height: 420px;
+}
+
+@media screen and (max-width: 1250px) {
+  main .main1 .heading1 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .main1 .heading1 h1 {
+    order: 2;
+    margin-top: -10px;
+  }
+  main .main1 .heading1 img {
+    order: 1;
+    margin-top: 30px;
+  }
+  main .main1 .donuts-products {
+    grid-template-columns: 370px 370px;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .main2 {
+    margin-top: 450px;
+  }
+  main .main2 .heading2 {
+    display: flex;
+    flex-direction: column;
+  }
+  main .main2 .heading2 h1 {
+    order: 2;
+    margin-top: -10px;
+  }
+  main .main2 .heading2 img {
+    order: 1;
+    margin-top: 30px;
+  }
+  main .main2 .ice-cream-products {
+    grid-template-columns: 370px 370px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 860px) {
+  main .main1 .donuts-products {
+    grid-template-columns: 370px;
+    gap: 30px;
+  }
+  main .main2 {
+    margin-top: 1800px;
+  }
+  main .main2 .ice-cream-products {
+    grid-template-columns: 370px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .main1 {
+    margin-top: 220px;
+  }
+  main .main1 .heading1 h1 {
+    margin-top: -10px !important;
+  }
+  main .main2 .heading2 h1 {
+    margin-top: -10px !important;
+  }
+}
+main .employees_heading1 {
+  margin-top: 160px;
+  /*  border: solid 5px purple; */
+}
+main .employees_heading1 h1 {
+  color: rgb(105, 17, 3);
+  margin: auto;
+}
+main .employees {
+  /* border: solid 1px blue; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .employees .employee {
+  /* border: solid 1px black; */
+  /* background-color: rgb(105, 17, 3, .1); */
+  border-radius: 20px;
+  width: 90%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+}
+main .employees .employee .person {
+  /* border: solid 1px orange; */
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  /* margin-left: 10px; */
+}
+main .employees .employee .person p {
+  color: rgb(105, 17, 3);
+  font-weight: 400;
+  text-align: center;
+}
+main .employees .employee .person img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  transition: 1s ease-in-out;
+}
+main .employees .employee .person img:hover {
+  scale: 1.5;
+  opacity: 0.7;
+}
+main .employees .employee p {
+  font-weight: 500;
+  /* border: solid 1px red; */
+  background-color: rgba(105, 17, 3, 0.4);
+  border-radius: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 923px) {
+  .employees_heading1 {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .employees_heading1 {
+    margin-bottom: 250px;
+  }
+
+  .employees .employee {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .employees .employee .employee_description {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .employees .employee .person p {
+    margin-bottom: 0px;
+  }
+  .employees .employee:nth-child(2) {
+    /* border: solid 1px pink; */
+    margin-bottom: -40px;
+    margin-top: 120px;
+  }
+  .employees .employee:nth-child(2) .person {
+    order: 1;
+  }
+  .employees .employee:nth-child(2) .employee_description {
+    order: 2;
+  }
+  .employees .employee:nth-child(4) {
+    /* border: solid 1px pink; */
+    margin-bottom: -40px;
+    margin-top: 120px;
+  }
+  .employees .employee:nth-child(4) .person {
+    order: 1;
+  }
+  .employees .employee:nth-child(4) .employee_description {
+    order: 2;
+  }
+}
+@media screen and (max-width: 550px) {
+  .employees {
+    margin-top: 230px;
+  }
+  .employees .employee {
+    margin-bottom: 25px;
+  }
+  .employees .employee .person img {
+    /* border: solid 1px orangered; */
+    margin: auto;
+  }
+  .employees .employee:nth-child(1) {
+    margin-top: 300px;
+  }
+  .employees .employee:nth-child(2) {
+    margin-bottom: 2px;
+  }
+  .employees .employee:nth-child(4) {
+    margin-bottom: 2px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    /* margin-top: 500px !important; */
+  }
+  main .employees_heading1 h1 {
+    font-size: 50px;
+    margin-top: 10px !important;
+  }
+  main .employees {
+    margin-top: 360px;
+  }
+  main .employees .employee {
+    margin-bottom: 50px;
+  }
+  main .employees .employee:nth-child(1) {
+    margin-bottom: 70px;
+  }
+  main .employees .employee:nth-child(2) {
+    margin-bottom: 40px;
+  }
+  main .employees .employee:nth-child(3) {
+    margin-bottom: 70px;
+  }
+  main .employees .employee:nth-child(4) {
+    margin-bottom: 40px;
+  }
+}
+main .history_heading1 {
+  margin-top: 160px;
+}
+main p {
+  color: rgb(105, 17, 3);
+  text-align: justify;
+  /* border: solid 1px red; */
+  width: 90%;
+  margin: auto;
+}
+main .gallery_history {
+  border: solid 5px rgb(105, 17, 3);
+  background-color: rgba(105, 17, 3, 0.3);
+  margin: auto;
+  width: 90%;
+  border-radius: 25%;
+}
+main .gallery_history img {
+  height: 550px;
+  border-radius: 25%;
+}
+main .gallery_history h5,
+main .gallery_history p {
+  color: white;
+  font-weight: 800;
+}
+main .gallery_history .carousel-indicators .active {
+  background-color: rgb(105, 17, 3);
+}
+main .gallery_history .carousel-control-prev-icon, main .gallery_history .carousel-control-next-icon {
+  border-radius: 50%;
+  background-color: rgb(105, 17, 3);
+}
+
+@media screen and (max-width: 600px) {
+  main .gallery_history p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .gallery_history p {
+    display: none;
+  }
+  main .history_heading1 {
+    margin-top: 10px !important;
+  }
+}
+main .form {
+  width: 65%;
+  border-radius: 25%;
+  background-color: rgba(105, 17, 3, 0.1);
+  margin-top: 160px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .form label {
+  color: rgb(105, 17, 3);
+}
+main .form input {
+  background-color: rgba(105, 17, 3, 0.1) !important;
+  border: solid 1px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3);
+}
+main .form input:focus {
+  box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3) !important;
+}
+main .form .form-select {
+  background-color: rgba(105, 17, 3, 0.1) !important;
+  border: solid 1px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3);
+}
+main .form .form-select:focus {
+  box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3) !important;
+}
+main .form .form-select option {
+  background-color: rgba(105, 17, 3, 0.1) !important;
+}
+main .form textarea {
+  background-color: rgba(105, 17, 3, 0.1) !important;
+  border: solid 1px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3);
+}
+main .form textarea:focus {
+  box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+  color: rgb(105, 17, 3) !important;
+}
+main .form ::placeholder {
+  color: rgb(105, 17, 3);
+}
+main .form .btn-primary {
+  background-color: rgb(105, 17, 3) !important;
+  border: solid 1px rgb(105, 17, 3) !important;
+  transition: 1s ease-in-out;
+}
+main .form .btn-primary:hover {
+  scale: 1.2;
+}
+
+/*# sourceMappingURL=style.css.map */

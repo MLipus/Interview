@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+    padding: 19.2px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+
+
+/******hlavniCast, resp.main******/
+.hlavniCast {
+    display: flex;
+    color: #2c2c2c;
+    font-family: Cera Pro, sans-serif;
+}
+
+.hlavniCast article {
+    border-left: #d01012 1px solid;
+    border-right: #d01012 1px solid;
+}
+
+nav a {
+    color: #2c2c2c;
+    font-family: Cera Pro, sans-serif;
+}
+
+/******Produkty******/
+.hlavniCast nav p {
+    text-align: center;
+    font-family: Cera Pro, sans-serif;
+    border-bottom: #d01012 solid 2px;
+}
+
+.konkretniProdukty li {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/******clanek******/
+.clanek {
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.clanek1 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.clanek1 img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 16px 5px 0px 0px;
+}
+
+.clanek2 img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+.clanek2 {
+    flex: 2;
+}
+
+nav {
+    order: 1;
+    flex: 1;
+}
+
+article {
+    order: 2;
+    flex: 10;
+}
+
+aside {
+    order: 3;
+    flex: 1.5;
+}
+
+/*Stranka o_nas.html, u_nas.html, pro_dospele.html*/
+.o_nas h1,
+.u_nas h1,
+.pro_deti h1,
+.pro_dospele h1,
+.exkluzivni h1,
+.kontaktniFormular h1 {
+    margin: auto;
+    margin-top: 16px;
+    text-align: center;
+    font-family: Cera Pro, sans-serif;
+    color: #2c2c2c;
+    border-bottom: #d01012 solid 2px;
+    width: 420px;
+}
+
+
+.o_nas p,
+.u_nas p,
+.pro_deti p,
+.pro_dospele p,
+.exkluzivni p {
+    text-align: justify;
+}
+
+.o_nas .video1 {
+    text-align: center;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.obrazek img {
+    width: 400px;
+    height: 300px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.obrazek .popisek {
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffd922;
+}
+
+.popisek:hover {
+    background: rgb(208, 16, 18, 0.6);
+}
+
+.kontaktniHodnoty {
+    background: #ffd922;
+    border-radius: 10px;
+    border: #d01012 solid 1px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.kontaktniFormular .kontaktniHodnoty {
+    margin-top: 20px;
+    align-items: center;
+}
+
+input[type=text],
+input[type=tel],
+input[type=mail] {
+    width: 300px;
+    padding: 7px;
+    border: #d01012 solid 1px;
+    border-radius: 10px;
+    box-shadow: #ffe97f 5px 5px;
+    font-family: Cera Pro, sans-serif;
+}
+
+input[type=submit] {
+    width: 80px;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: #d01012 solid 1px;
+    background: #ffe97f;
+    border-radius: 10px;
+    font-family: Cera Pro, sans-serif;
+}
+
+input[type=submit]:hover {
+    background: #d01012;
+    color: white;
+    transition: background-color 1s;
+}
+
+.kontaktniFormular label {
+    margin-bottom: 1px;
+    margin-top: 14px;
+}
+
+.kontaktniHodnoty textarea {
+    width: 75%;
+    margin-top: 10px;
+    border: #d01012 solid 1px;
+    border-radius: 10px;
+    padding: 7px;
+    font-family: Cera Pro, sans-serif;
+}
+
+.konkretniKontakty {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+header {
+    background: #ffd922;
+    z-index: 1;
+}
+
+nav {
+    background: #ffe97f
+}
+
+article {
+    background: #ffe97f
+}
+
+aside {
+    background: #ffe97f
+}
+
+aside .zamestnanci .konkretniZamestnanec1 {
+    z-index: 0
+}
+
+footer {
+    background: #ffd922
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 250px;
+    }
+
+    header,
+    .odkazyHlavicka a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .odkazyHlavicka :nth-child(-n+3) {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .konkretniProdukty {
+        text-align: center;
+    }
+
+    aside .zamestnanci {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: justify;
+        align-items: center;
+    }
+
+    .kontaktniFormular textarea {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .kontaktniFormular textarea {
+        width: 300px;
+    }
+
+    .kontaktniFormular h1 {
+        width: 200px;
+    }
+
+    .konkretniKontakty {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .o_nas .video1 iframe {
+        width: 300px;
+        height: 250px;
+    }
+
+    .obrazek img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .o_nas h1,
+    .u_nas h1,
+    .pro_deti h1,
+    .pro_dospele h1,
+    .exkluzivni h1 {
+        width: 200px;
+    }
+}

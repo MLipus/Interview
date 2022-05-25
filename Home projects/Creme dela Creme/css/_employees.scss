@@ -1,0 +1,64 @@
+main {
+    .employees_heading1 {
+        margin-top: 160px;
+
+        h1 {
+            color: rgb(105, 17, 3);
+            margin: auto;
+        }
+    }
+
+    .employees {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .employee {
+            border-radius: 20px;
+            width: 90%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+            .person {
+                margin-right: 15px;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                width: max-content;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                font-size: 10px;
+
+                p {
+                    color: rgb(105, 17, 3);
+                    font-weight: 400;
+                    text-align: center;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 5px;
+                    transition: 1s ease-in-out;
+
+                    &:hover {
+                        scale: 1.5;
+                        opacity: .7;
+                    }
+                }
+            }
+
+            p {
+                font-weight: 500;
+                background-color: rgb(105, 17, 3, .4);
+                border-radius: 10px;
+                color: black;
+            }
+        }
+    }
+}

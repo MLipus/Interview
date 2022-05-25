@@ -1,0 +1,70 @@
+main {
+    .form {
+        width: 65%;
+        border-radius: 25%;
+        background-color: rgb(105, 17, 3, .1);
+        margin-top: 160px;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            color: rgb(105, 17, 3);
+        }
+
+        input {
+            background-color: rgb(105, 17, 3, .1) !important;
+            border: solid 1px rgb(105, 17, 3) !important;
+            color: rgb(105, 17, 3);
+
+            &:focus {
+                box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+                color: rgb(105, 17, 3) !important;
+            }
+        }
+
+        .form-select {
+            background-color: rgb(105, 17, 3, .1) !important;
+            border: solid 1px rgb(105, 17, 3) !important;
+            color: rgb(105, 17, 3);
+
+            &:focus {
+                box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+                color: rgb(105, 17, 3) !important;
+            }
+
+            option {
+                background-color: rgb(105, 17, 3, .1) !important;
+
+            }
+        }
+
+        textarea {
+            background-color: rgb(105, 17, 3, .1) !important;
+            border: solid 1px rgb(105, 17, 3) !important;
+            color: rgb(105, 17, 3);
+
+            &:focus {
+                box-shadow: 0 0 5px 10px rgb(105, 17, 3) !important;
+                color: rgb(105, 17, 3) !important;
+            }
+        }
+
+        ::placeholder {
+            color: rgb(105, 17, 3);
+        }
+
+        .btn-primary {
+            background-color: rgb(105, 17, 3) !important;
+            border: solid 1px rgb(105, 17, 3) !important;
+            transition: 1s ease-in-out;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+}

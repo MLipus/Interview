@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import 'main';
+@import 'media_main';
+
+@import 'about_us';
+@import 'media_about_us';
+
+@import 'employees';
+
+@import 'contact';
+
+@import 'countries';
+@import 'media_countries';
+
+@import 'references';
+@import 'mobile_references';

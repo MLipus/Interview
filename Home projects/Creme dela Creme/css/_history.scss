@@ -1,0 +1,43 @@
+main {
+    .history_heading1 {
+        margin-top: 160px;
+    }
+
+    p {
+        color: rgb(105, 17, 3);
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery_history {
+        border: solid 5px rgb(105, 17, 3);
+        background-color: rgb(105, 17, 3, .3);
+        margin: auto;
+        width: 90%;
+        border-radius: 25%;
+
+        img {
+            height: 550px;
+            border-radius: 25%;
+        }
+
+        h5,
+        p {
+            color: white;
+            font-weight: 800;
+        }
+
+        .carousel-indicators {
+            .active {
+                background-color: rgb(105, 17, 3);
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            border-radius: 50%;
+            background-color: rgb(105, 17, 3);
+        }
+    }
+}

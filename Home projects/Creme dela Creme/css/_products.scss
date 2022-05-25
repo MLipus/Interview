@@ -1,0 +1,117 @@
+main {
+    .main1 {
+        width: 100%;
+        margin-top: 160px;
+
+        .heading1 {
+            height: 100px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                height: 100%;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .donuts-products {
+            height: 900px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 370px 370px 370px);
+            justify-content: space-between;
+            align-items: center;
+
+
+            .product {
+                .donut {
+                    margin: auto;
+                    position: relative;
+
+                    .description {
+                        position: absolute;
+                        bottom: -17px;
+                        height: max-content;
+                        width: 370px;
+                        text-align: center;
+                        background-color: rgb(105, 17, 3, .7);
+                        color: white;
+                        font-weight: 800;
+                    }
+
+                    img {
+                        width: 370px;
+                        height: 420px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main2 {
+        .heading2 {
+            height: 100px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            h1 {
+                height: 100%;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .ice-cream-products {
+            height: 900px;
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 370px 370px 370px);
+            justify-content: space-between;
+            align-items: center;
+
+            .product {
+                .ice-cream {
+                    margin: auto;
+                    position: relative;
+
+                    .description {
+                        position: absolute;
+                        bottom: -17px;
+                        height: max-content;
+                        width: 370px;
+                        text-align: center;
+                        background-color: rgb(105, 17, 3, .7);
+                        color: white;
+                        font-weight: 800;
+                    }
+
+                    img {
+                        width: 370px;
+                        height: 420px;
+                    }
+                }
+            }
+        }
+    }
+}

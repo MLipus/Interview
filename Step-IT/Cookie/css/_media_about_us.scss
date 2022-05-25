@@ -1,0 +1,13 @@
+@media screen and (max-width: 750px) {
+    .video {
+
+        text-align: center;
+        width: 400px !important;
+        transition: 1s;
+
+        iframe {
+            width: 350px;
+            height: 200px;
+        }
+    }
+}

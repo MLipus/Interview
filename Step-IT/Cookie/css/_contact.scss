@@ -1,0 +1,49 @@
+.sheet {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    label {
+        color: rgb(248, 250, 253);
+    }
+
+    input,
+    textarea,
+    select {
+        background-color: transparent;
+        color: rgb(248, 250, 253);
+
+        &:focus {
+            background-color: transparent !important;
+            color: rgb(248, 250, 253) !important;
+            outline-color: none !important;
+            border: none;
+            box-shadow: 0 0 10px 10px rgb(248, 250, 253);
+        }
+    }
+
+    ::placeholder {
+        color: rgb(248, 250, 253) !important;
+    }
+
+    .btn {
+        color: rgb(248, 250, 253) !important;
+        border: solid 1px rgb(248, 250, 253) !important;
+        font-size: 20px !important;
+        width: 200px !important;
+
+
+        &:hover {
+            box-shadow: 0 0 10px 10px rgb(248, 250, 253);
+            color: #000000 !important;
+            background-color: transparent;
+            border: none;
+            transition: 1s;
+        }
+
+        &:focus {
+            outline-style: none;
+            border: none;
+        }
+    }
+}

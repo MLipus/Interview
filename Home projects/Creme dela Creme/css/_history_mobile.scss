@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px) {
+    main {
+        .gallery_history {
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        .gallery_history {
+            p {
+                display: none;
+            }
+        }
+
+        .history_heading1 {
+            margin-top: 10px !important;
+        }
+    }
+}

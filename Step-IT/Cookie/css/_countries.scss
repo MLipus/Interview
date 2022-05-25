@@ -1,0 +1,26 @@
+.places {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .gallery {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1000px;
+        height: 450px;
+        background: rgb(248, 250, 253, 0.4);
+
+        .photos {
+            width: 900px;
+            height: 400px;
+
+            img {
+                border-radius: 20px;
+                width: 900px;
+                height: 400px;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+/******footer******/
+.footer-col {
+    color: #2c2c2c;
+    font-family: Cera Pro, sans-serif;
+    padding: 50px;
+}
+
+.footer-col h4 {
+    margin-bottom: 2px;
+    border-bottom: #d01012 3px solid;
+    margin-right: 70px;
+}
+
+
+
+.container {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.footer-col p {
+    color: #d01012;
+    text-align: justify;
+    margin-top: 2px;
+    margin-right: 70px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #d01012;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-links {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 250px;
+    }
+
+    header,
+    .odkazyHlavicka a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .odkazyHlavicka :nth-child(-n+3) {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .konkretniProdukty {
+        text-align: center;
+    }
+
+    aside .zamestnanci {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: justify;
+        align-items: center;
+    }
+}
